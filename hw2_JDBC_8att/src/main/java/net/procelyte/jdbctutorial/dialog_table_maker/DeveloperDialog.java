@@ -61,8 +61,7 @@ public class DeveloperDialog implements CaseCRUD {
             developer = developersCRUD.read(id);
             service.printTable(developer.getNameColumns(), developer.getCortaje());
             Scanner scanner = new Scanner(System.in);
-//yyyyyyyyyyyyyeeeeeeeeeeeeesssssssssssssss//////////nnnnnnnnnoooooooooooo
-
+            if (scanner.nextLine().toLowerCase().charAt(0) != 'y') return;
             developersCRUD.update(fillDeveloper());
         }catch (NoSuchElementException e){
             System.out.println("Developer not found in table.");
