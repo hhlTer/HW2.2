@@ -95,6 +95,9 @@ public class JDBCMain {
                 case 'c':
                     dialog.dialogMake().clearDialog();
                     break;
+//Update table
+                case 'u':
+                    dialog.dialogMake().updateDialog();
 //Exit
                 case 'e':
                     System.out.println("Bye!");
