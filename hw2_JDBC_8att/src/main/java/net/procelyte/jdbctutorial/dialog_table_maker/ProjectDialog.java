@@ -59,8 +59,7 @@ public class ProjectDialog implements CaseCRUD {
             projects = projectsCRUD.read(id);
             service.printTable(projects.getNameColumns(), projects.getCortaje());
             Scanner scanner = new Scanner(System.in);
-//yyyyyyyyyyyyyeeeeeeeeeeeeesssssssssssssss//////////nnnnnnnnnoooooooooooo
-
+            if (scanner.nextLine().toLowerCase().charAt(0) != 'y') return;
             projectsCRUD.update(fillProject());
         }catch (NoSuchElementException e){
             System.out.println("Project not found in table.");
