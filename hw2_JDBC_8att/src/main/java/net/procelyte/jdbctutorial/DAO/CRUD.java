@@ -1,4 +1,4 @@
-package net.procelyte.jdbctutorial;
+package net.procelyte.jdbctutorial.DAO;
 
 import java.util.List;
 

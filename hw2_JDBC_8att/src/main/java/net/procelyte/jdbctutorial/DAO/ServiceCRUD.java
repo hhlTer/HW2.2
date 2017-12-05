@@ -1,5 +1,6 @@
-package net.procelyte.jdbctutorial;
+package net.procelyte.jdbctutorial.DAO;
 
+import net.procelyte.jdbctutorial.DBConnection;
 import net.procelyte.jdbctutorial.tables.Developers;
 import net.procelyte.jdbctutorial.tables.Tables;
 

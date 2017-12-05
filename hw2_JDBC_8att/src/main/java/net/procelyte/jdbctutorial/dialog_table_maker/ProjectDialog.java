@@ -1,17 +1,14 @@
 package net.procelyte.jdbctutorial.dialog_table_maker;
 
-import net.procelyte.jdbctutorial.CRUD;
-import net.procelyte.jdbctutorial.DeveloperCRUD;
-import net.procelyte.jdbctutorial.ProjectsCRUD;
-import net.procelyte.jdbctutorial.tables.Developers;
+import net.procelyte.jdbctutorial.DAO.CRUD;
+import net.procelyte.jdbctutorial.DAO.ProjectsCRUD;
 import net.procelyte.jdbctutorial.tables.Projects;
 
-import java.math.BigDecimal;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
-public class ProjectDialog implements CaseCRUD {
+public class ProjectDialog implements CaseDialog {
 
     private DialogService service = new DialogService();
     private CRUD<Projects, Long> projectsCRUD = new ProjectsCRUD();

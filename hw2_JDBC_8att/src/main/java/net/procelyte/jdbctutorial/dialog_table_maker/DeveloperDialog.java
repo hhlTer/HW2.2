@@ -1,7 +1,7 @@
 package net.procelyte.jdbctutorial.dialog_table_maker;
 
-import net.procelyte.jdbctutorial.CRUD;
-import net.procelyte.jdbctutorial.DeveloperCRUD;
+import net.procelyte.jdbctutorial.DAO.CRUD;
+import net.procelyte.jdbctutorial.DAO.DeveloperCRUD;
 import net.procelyte.jdbctutorial.tables.Developers;
 
 import java.math.BigDecimal;
@@ -16,7 +16,7 @@ import java.util.Scanner;
 * (developersCRUD, service)
 * */
 
-public class DeveloperDialog implements CaseCRUD {
+public class DeveloperDialog implements CaseDialog {
 
     private DialogService service = new DialogService();
     private CRUD<Developers, Long> developersCRUD = new DeveloperCRUD();
