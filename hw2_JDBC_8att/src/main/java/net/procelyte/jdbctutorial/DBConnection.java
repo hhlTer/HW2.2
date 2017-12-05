@@ -4,7 +4,7 @@ package net.procelyte.jdbctutorial;
 
 import java.sql.*;
 
-class DBConnection {
+public class DBConnection {
     private static final java.lang.String URL =  "jdbc:mysql://localhost:3306/first_linux";
     private static final java.lang.String DRIVER = "com.mysql.jdbc.Driver";
     private static final String NAME = "root";
@@ -23,7 +23,7 @@ class DBConnection {
         }
     }
 
-    static Connection getConnection() {
+    public static Connection getConnection() {
         return connection;
     }
 }

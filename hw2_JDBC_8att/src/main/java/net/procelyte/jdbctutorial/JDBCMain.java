@@ -1,8 +1,8 @@
 package net.procelyte.jdbctutorial;
 
+import net.procelyte.jdbctutorial.DAO.EnumTables;
 import net.procelyte.jdbctutorial.dialog_table_maker.*;
 
-import java.math.BigDecimal;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
